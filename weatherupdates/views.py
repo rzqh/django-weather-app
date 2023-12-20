@@ -5,7 +5,7 @@ from datetime import datetime
 def index(request):    
     try:    
         if request.method == 'POST':
-            API_KEY = '9088c6eb1b546b8cee74949960c95afa'            
+            API_KEY = 'ur api key' #ur api key           
             city_name = request.POST.get('city')            
             url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_KEY}&units=metric'            
             response = requests.get(url).json()            
